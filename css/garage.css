@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: #1295db;
+  width: 100%;
+  min-height: 30px;
+  color: white;
+}
+.head_introduce {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 30px;
+  width: 100%;
+  font-weight: 350;
+}
+.head_introduce a {
+  text-decoration: none;
+  color: white;
+  font-weight: 350;
+}
+.headMain {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-hover a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.dropdown-menu-hover {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu-hover a {
+  padding: 10px 20px;
+  display: block;
+  color: #333;
+}
+
+.dropdown-menu-hover a:hover {
+  background-color: #f8f9fa;
+  color: #1295db;
+}
+.dropdown-hover:hover .dropdown-menu-hover {
+  display: block;
+}
+
+.listLink1 {
+  width: 100px;
+  height: 60px;
+}
+.listLink2 {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  gap: 15px;
+}
+
+.listLink2 a,
+.listLink2 .dropdown-hover {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  font-weight: 700;
+  color: #1295db;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.dropdown-hover {
+  position: relative;
+}
+
+.dropdown-hover > a {
+  cursor: pointer;
+}
+
+.dropdown-menu-hover {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-menu-hover a {
+  padding: 10px 20px;
+  color: #1295db;
+  background-color: white;
+  display: block;
+}
+
+.dropdown-menu-hover a:hover {
+  background-color: #f8f9fa;
+  color: #1295db;
+}
+
+.dropdown-hover:hover .dropdown-menu-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.listLink2 a:hover {
+  background-color: #1295db;
+  color: white;
+  border-radius: 10px;
+}
+
+.listLink2 a:active {
+  background-color: #1295db;
+  color: white;
+  border-radius: 10px;
+}
+.listLink2 a.active {
+  background-color: #1295db;
+  color: white;
+  border-radius: 10px;
+}
+.search-box button {
+  width: 38.65px;
+  height: 30.8px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ffa901;
+  border: none;
+}
+.title {
+  text-align: center;
+}
+.title h1 {
+  display: inline-block;
+  text-align: center;
+  padding-left: 12px;
+  border-left: 4px solid #ffa901;
+  margin-top: 40px;
+}
+
+.listLink2 a:active {
+  background-color: #1295db;
+  color: white;
+  border-radius: 10px;
+}
+/*  */
+footer {
+  margin-top: 50px;
+  background-color: #fff7f5;
+  height: 942.5px;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  margin-top: 30px;
+  width: 1100px;
+  height: 895px;
+  display: flex;
+  flex-direction: column;
+}
+.footer li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.footer a {
+  text-decoration: none;
+  color: #767676;
+}
+.footer a:hover {
+  color: black;
+}
+.footer h5 {
+  margin-left: 32px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.footer1 {
+  display: flex;
+  height: 359.5px;
+}
+.branch1 {
+  width: 550px;
+  height: 359.5px;
+}
+.branch2 {
+  width: 275px;
+  height: 359.5px;
+}
+.branch3 {
+  width: 275px;
+  height: 359.5px;
+}
+.footer2 {
+  display: flex;
+  height: 306px;
+}
+.branch01,
+.branch04,
+.branch03 {
+  width: 275px;
+  height: 269.5px;
+}
+.branch02 {
+  width: 275px;
+  height: 306px;
+}
+.footer3 {
+  height: 229px;
+  display: flex;
+}
+.branch001,
+.branch002,
+.branch003,
+.branch004 {
+  width: 275px;
+  height: 229px;
+}
+.branch004 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text-center {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.pagination ul > li {
+  list-style: none;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

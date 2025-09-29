@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+}
+
+.active {
+  background-color: #ffe5dc !important;
+  color: #ff5e3a !important;
+}
+
+.pagination {
+  background: white;
+  border: 2px solid #d0d5dd !important;
+  width: 123px;
+  height: 36px;
+  padding: 4px 0px 0px 8px;
+}
+
+td {
+  padding: auto !important;
+}
+
+.addTrademark {
+  width: 168px;
+  height: 40px;
+  background: #b54115;
+  color: white;
+}

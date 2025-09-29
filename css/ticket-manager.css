@@ -1,0 +1,66 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+}
+
+.active {
+  background-color: #ffe5dc !important;
+  color: #ff5e3a !important;
+}
+
+#btn-add {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: #b54115;
+  color: white;
+}
+
+#btn-add:hover {
+  background-color: #c15125;
+  color: white;
+}
+#filter {
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+  appearance: none;
+  padding: 5px 15px;
+}
+
+#box-search {
+  border: 1px solid #d0d5dd;
+  border-radius: 5px;
+}
+
+#content {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+#search {
+  border: none;
+  outline: none;
+}
+.table {
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+/* Ẩn pseudo-element mặc định tạo mũi tên */
+.dropdown-toggle::after {
+  display: none !important;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+ul button {
+  border-radius: 5px;
+  border: 2px solid #d0d5dd;
+}
+select {
+  border-radius: 5px;
+  text-align: center;
+  appearance: none;
+}

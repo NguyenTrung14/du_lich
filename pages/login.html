@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="icon" href="/assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="login">
+      <!--phần 1-->
+      <div class="leftBackground">
+        <img src="../assets/img/linhvat.png" alt="" />
+      </div>
+      <!-- phần 2  -->
+      <div class="rightBackground">
+        <img src="../assets/img/logo.svg" alt="" width="40%" />
+        <h1>Đăng nhập</h1>
+
+        <form class="loginRightBackground" id="loginForm">
+          <input type="text" id="email" name="phoneAndEmaill" placeholder="Email / Số Điện Thoại" />
+          <p class="failCheck" style="color: red; display: none"></p>
+          <br />
+
+          <div class="form__row">
+            <input type="password" name="password" id="password" placeholder="Vui lòng nhập mật khẩu" />
+            <div class="show-hide-btn">
+              <i class="fa-regular fa-eye" id="togglePassword"></i>
+            </div>
+          </div>
+          <p class="failCheck" style="color: red; display: none"></p>
+          <br />
+          <input type="submit" value="Đăng nhập" />
+          <br />
+          <p>Bạn đã có tài khoản ? <a href="../pages/register.html">Đăng ký</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+    <script src="/js/dataUser.js"></script>
+  </body>
+</html>

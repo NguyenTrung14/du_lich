@@ -1,0 +1,198 @@
+busStations = [
+  {
+    id: 1,
+    title: "Bến xe Gia Lâm",
+    img: "/assets/img/BX-GIA-LAM.jpg",
+    description: "Hà Nội có nghĩa là được bao quanh bởi các con sông, tên gọi này phản ánh vị...  ",
+  },
+  {
+    id: 2,
+    title: "Bến xe khách Quảng Bình",
+    img: "/assets/img/BX-QUANG-BINH.png",
+    description: "Các bến xe Quảng Bình: Địa chỉ, thông tin tuyến xe khách đi ...",
+  },
+  {
+    id: 3,
+    title: "Bến xe Cần Thơ",
+    img: "/assets/img/BX_CAN_THO.png",
+    description: "Cần Thơ đang ngày càng phát triển và thay đổi về mọi mặt, theo đó ngành du lịch... ",
+  },
+  {
+    id: 4,
+    title: "Bến xe Vũng Tàu",
+    img: "/assets/img/BX_VUNG_TAU.png",
+    description: "Vũng Tàu là thành phố thuộc tỉnh Bà Rịa – Vũng Tàu, nằm ở vùng Đông Nam Bộ với...",
+  },
+  {
+    id: 5,
+    title: "Danh sách bến xe Hà Nội",
+    img: "/assets/img/BX_HA_NOI.jpg",
+    description: "Hà Nội là một thành phố thủ đô sầm uất của Việt Nam, nói về Hà Nội khá nhiều du ...",
+  },
+  {
+    id: 6,
+    title: "Bến xe Thanh Hóa",
+    img: "/assets/img/BX_THANH_HOA.jpg",
+    description: "Thanh Hóa là vùng đất nổi tiếng với nhiều cảnh đẹp hùng vĩ, cũng là quê hương...",
+  },
+  {
+    id: 7,
+    title: "Bến xe tiêu biểu hai miền Nam Bắc",
+    img: "/assets/img/BX_TIEU_BIEU.jpg",
+    description: "Từ lâu “bến xe khách” được biết đến là trung tâm kết nối giao thương giữa các vùng...",
+  },
+  {
+    id: 8,
+    title: "Bến xe Quy Nhơn - Bình Định",
+    img: "/assets/img/BX_QUYNHON_BINHDINH.png",
+    description: "Bình Định thuộc vùng Duyên hải Nam Trung bộ có diện tích tự nhiên rộng lớn, tiếp giáp ...",
+  },
+  {
+    id: 9,
+    title: "Bến xe Nước Ngầm",
+    img: "/assets/img/bx-9.jpg",
+    description: "Tổng hợp thông tin về bến xe Nước Ngầm Hà Nội cùng tuyến đường, giá...",
+  },
+  {
+    id: 10,
+    title: "Bến xe Miền Đông Mới",
+    img: "/assets/img/bx-10.jpg",
+    description: "Giới thiệu thông tin về bến xe Miền Đông Mới...",
+  },
+  {
+    id: 11,
+    title: "Bến xe Kon Tum",
+    img: "/assets/img/bx-11.jpg",
+    description: "Thông tin về các bến xe tại Kon Tum...",
+  },
+  {
+    id: 12,
+    title: "Bến xe Gia Nghĩa – Đắk Nông",
+    img: "/assets/img/bx-12.jpg",
+    description: "Thông tin về các bến xe ở Đắk Nông...",
+  },
+  {
+    id: 13,
+    title: "Bến xe Đức Long Gia Lai",
+    img: "/assets/img/bx-13.jpg",
+    description: "Thông tin địa chỉ, bến xe Đức Long Gia Lai...",
+  },
+  {
+    id: 14,
+    title: "Các bến xe Đà Nẵng",
+    img: "/assets/img/bx-14.jpg",
+    description: "Tổng quan các bến xe ở Đà Nẵng, địa chỉ, số điện thoại, tuyến...",
+  },
+  {
+    id: 15,
+    title: "Các bến xe Đồng Tháp",
+    img: "/assets/img/bx-15.jpg",
+    description: "Giới thiệu các bến xe tại Đồng Tháp...",
+  },
+  {
+    id: 16,
+    title: "Bến xe Miền Tây",
+    img: "/assets/img/bx-16.jpg",
+    description: "Tổng quan về bến xe Miền Tây và một số tuyến đường xe chạy...",
+  },
+  {
+    id: 17,
+    title: "Bến xe Kiên Giang",
+    img: "/assets/img/bx-17.jpg",
+    description: "Thông tin các Bến xe tại Kiên Giang...",
+  },
+  {
+    id: 18,
+    title: "Tổng hợp các bến xe Hải Phòng",
+    img: "/assets/img/bx-18.jpg",
+    description: "Các bến xe ở Hải Phòng, thông tin, địa chỉ, tuyến xe ...",
+  },
+  {
+    id: 19,
+    title: "Bến xe Yên Bái",
+    img: "/assets/img/bx-19.jpg",
+    description: "Bến xe Yên Bái: Thông tin địa chỉ, số điện thoại, lịch trình 12 nhà...",
+  },
+  {
+    id: 20,
+    title: "Bến xe Nam Định",
+    img: "/assets/img/bx-20.jpg",
+    description: "Thông tin địa chỉ bến xe Nam Định và tuyến đường xe đi từ bến...",
+  },
+  {
+    id: 21,
+    title: "Bến xe Lai Châu",
+    img: "/assets/img/bx-21.png",
+    description: "Giới thiệu về các bến xe Lai Châu...",
+  },
+  {
+    id: 22,
+    title: "Bến xe Hà Nam",
+    img: "/assets/img/bx-22.jpg",
+    description: "Bến xe Hà Nam: Thông tin, giá vé nhà xe từ bến đi các tỉnh...",
+  },
+  {
+    id: 23,
+    title: "Bến xe Giáp Bát",
+    img: "/assets/img/bx-23.jpg",
+    description: "Sơ lược thông tin về bến xe Giáp Bát Hà Nội, chi tiết vé nơi...",
+  },
+  {
+    id: 24,
+    title: "Bến xe Cẩm Phả, bến xe Cửa Ông",
+    img: "/assets/img/bx-24.jpg",
+    description: "Bến xe Cẩm Phả, Cửa Ông - Quảng Ninh: thông tin, lịch trình các nhà...",
+  },
+  {
+    id: 25,
+    title: "Các bến xe Đà Lạt – Lâm Đồng",
+    img: "/assets/img/bx-25.jpg",
+    description: "Các bến xe tại Đà Lạt, Lâm Đồng...",
+  },
+  {
+    id: 26,
+    title: "Giới thiệu 3 bến xe Đắk Lắk",
+    img: "/assets/img/bx-26.jpg",
+    description: "Danh sách tổng hợp các bến xe tại Đắk Lắk, tuyến đường và nhà xe...",
+  },
+  {
+    id: 27,
+    title: "Bến xe Thái Nguyên",
+    img: "/assets/img/bx-27.jpg",
+    description: "Đôi nét về Thái Nguyên và thông tin tuyến xe, giá vé...",
+  },
+  {
+    id: 28,
+    title: "Bến xe Bắc Vinh Nghệ An",
+    img: "/assets/img/bx-28.jpg",
+    description: "Bến xe Bắc Vinh Nghệ An: Thông tin, giờ xuất bến các tuyến...",
+  },
+  {
+    id: 29,
+    title: "Bến xe Miền Đông",
+    img: "/assets/img/bx-29.jpg",
+    description: "Đôi nét về bến xe Miền Đông – Sài Gòn...",
+  },
+  {
+    id: 30,
+    title: "Bến xe Phú Yên",
+    img: "/assets/img/bx-30.jpg",
+    description: "Một số thông tin về bến xe tỉnh Phú Yên, lịch trình, giá vé...",
+  },
+  {
+    id: 31,
+    title: "Bến xe Long An",
+    img: "/assets/img/bx-31.png",
+    description: "Giới thiệu các bến xe tại Long An và các tuyến xe khách đi và đến...",
+  },
+  {
+    id: 32,
+    title: "Bến xe Bến Tre",
+    img: "/assets/img/bx-32.jpg",
+    description: "Các bến xe tại Bến Tre, thông tin địa chỉ, lịch trình và giá vé...",
+  },
+];
+
+if (!localStorage.getItem("busStations")) {
+  localStorage.setItem("busStations", JSON.stringify(busStations));
+}

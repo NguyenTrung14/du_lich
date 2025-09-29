@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="../css/globals.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/move.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="../js/home.js"></script>
+</head>
+
+<body>
+  <div class="desktop">
+    <div class="div">
+      <header>
+        <div class="head_introduce">
+          <div class="head1">
+            <span> <i class="fa-solid fa-bus-simple"></i> Hệ Thống Đặt Vé Xe Toàn Quốc</span>
+          </div>
+          <div class="head2">
+            <span><i class="fa-regular fa-envelope"></i> <a href="#"> info.vivutoday@gmail.com</a></span>
+            &nbsp;|&nbsp;
+            <span><i class="fas fa-phone-flip"></i> <a href="#"> 1900-0152</a></span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- phan link -->
+        <div class="headMain">
+          <div class="listLink1">
+            <a href="/pages/home.html"><img src="../assets/img/logo.png" alt="vivutoday" /></a>
+          </div>
+          <div class="listLink2">
+            <a href="../pages/home.html" class="active">TRANG CHỦ</a>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+            <div class="dropdown-hover">
+              <a href="/pages/garage.html">THÔNG TIN NHÀ XE ▾</a>
+              <div class="dropdown-menu-hover">
+                <a href="#">Thông Tin Taxi</a>
+                <a href="#">Xe Limousine</a>
+                <a href="#">Xe Phương Trang</a>
+              </div>
+            </div>
+            <a href="../pages/busStation.html">BẾN XE</a>
+            <div class="dropdown-hover">
+              <a href="../pages/route.html">TUYẾN XE ▾</a>
+              <div class="dropdown-menu-hover">
+                <a href="#">Tuyến Xe Limousine</a>
+              </div>
+            </div>
+            <a href="../pages/ticket_check.html">KIỂM TRA VÉ</a>
+            <a href="#">TRAVEL</a>
+            <div class="search-box">
+              <button data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fas fa-search"></i>
+              </button>
+              <!-- <input type="text" placeholder="Tìm kiếm..." /> -->
+            </div>
+          </div>
+        </div>
+      
+      <div class="section">
+        <div class="image"></div>
+        <div class="chon-im-n">
+          <div class="overlay-border">
+            <div class="overlay">
+              <div class="text-wrapper-4">Điểm Khởi Hành</div>
+              <div class="dropdown" id="start-point-dropdown">
+                <div class="text-wrapper-5" id="start-point-display">Chọn Điểm Khởi Hành</div>
+                <div class="dropdown-content">
+                  <div class="dropdown-header">Tỉnh - Thành Phố</div>
+                  <div class="dropdown-item" data-value="Savannakhet - Lào">Savannakhet - Lào</div>
+                  <div class="dropdown-item" data-value="Pakse - Lào">Pakse - Lào</div>
+                  <div class="dropdown-item" data-value="Vientiane - Lào">Vientiane - Lào</div>
+                  <div class="dropdown-item" data-value="Vinh">Vinh</div>
+                  <div class="dropdown-item" data-value="Hà Nội">Hà Nội</div>
+                  <div class="dropdown-item" data-value="Hải Phòng">Hải Phòng</div>
+                  <div class="dropdown-item" data-value="Bắc Giang">Bắc Giang</div>
+                  <div class="dropdown-item" data-value="Sài Gòn">Sài Gòn</div>
+                  <div class="dropdown-item" data-value="Đà Lạt">Đà Lạt</div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay-2">
+              <div class="text-wrapper-4">Điểm Đến</div>
+              <div class="dropdown" id="destination-dropdown">
+                <div class="text-wrapper-5" id="destination-display">Chọn Điểm Đến</div>
+                <div class="dropdown-content">
+                  <div class="dropdown-header">Tỉnh - Thành Phố</div>
+                  <div class="dropdown-item" data-value="Savannakhet - Lào">Savannakhet - Lào</div>
+                  <div class="dropdown-item" data-value="Pakse - Lào">Pakse - Lào</div>
+                  <div class="dropdown-item" data-value="Vientiane - Lào">Vientiane - Lào</div>
+                  <div class="dropdown-item" data-value="Vinh">Vinh</div>
+                  <div class="dropdown-item" data-value="Hà Nội">Hà Nội</div>
+                  <div class="dropdown-item" data-value="Hải Phòng">Hải Phòng</div>
+                  <div class="dropdown-item" data-value="Bắc Giang">Bắc Giang</div>
+                  <div class="dropdown-item" data-value="Sài Gòn">Sài Gòn</div>
+                  <div class="dropdown-item" data-value="Đà Lạt">Đà Lạt</div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay-3">
+              <div class="text-wrapper-4">Ngày Khởi Hành</div>
+              <div class="date-picker-container" id="date-picker-container">
+                <div class="frame date-select-field" id="date-select-field">
+                  <img class="img" src="../assets/img/calendar.png" />
+                  <div class="text-wrapper-6" id="selected-date-display">Chọn Ngày Khởi Hành</div>
+                </div>
+                <div class="date-picker" id="date-picker">
+                  <div class="date-picker-header">
+                    <div class="month-year-selector">
+                      <select id="month-select" class="month-select">
+                        <option value="0">Tháng 1</option>
+                        <option value="1">Tháng 2</option>
+                        <option value="2">Tháng 3</option>
+                        <option value="3">Tháng 4</option>
+                        <option value="4">Tháng 5</option>
+                        <option value="5">Tháng 6</option>
+                        <option value="6">Tháng 7</option>
+                        <option value="7">Tháng 8</option>
+                        <option value="8">Tháng 9</option>
+                        <option value="9">Tháng 10</option>
+                        <option value="10">Tháng 11</option>
+                        <option value="11">Tháng 12</option>
+                      </select>
+                      <select id="year-select" class="year-select">
+
+                      </select>
+                    </div>
+                    <div class="date-picker-nav">
+                      <div class="prev-month" id="prev-month">&lt;</div>
+                      <div class="next-month" id="next-month">&gt;</div>
+                    </div>
+                  </div>
+                  <div class="weekdays">
+                    <div>CN</div>
+                    <div>T2</div>
+                    <div>T3</div>
+                    <div>T4</div>
+                    <div>T5</div>
+                    <div>T6</div>
+                    <div>T7</div>
+                  </div>
+                  <div class="days" id="days-container"></div>
+                </div>
+              </div>
+            </div>
+            <button class="button" onclick="tickets_set()">
+              <img class="search" src="../assets/img/Icon.png" />
+              <div class="text-2">TÌM CHUYẾN XE</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="frame-2">
+        <div class="text-wrapper-7">Tuyến Đường Phổ Biến</div>
+      </div>
+      <div class="frame-3">
+        <div class="text-wrapper-7">Ưu Đãi Nổi Bật</div>
+      </div>
+      <div class="frame-4">
+        <div class="text-wrapper-7">Nhà Xe Phổ Biến</div>
+      </div>
+      <div class="frame-5">
+        <div class="text-wrapper-7">Bến Xe Phổ Biến</div>
+      </div>
+      <div class="frame-6">
+        <p class="text-wrapper-7">Vivutoday Được Nhắc Tên Trên</p>
+      </div>      <div class="frame-7">
+        <div class="text-wrapper-7">Top Reviews</div>
+      </div>
+
+      <div class="route-container">
+        <!-- Render bằng JavaScript -->
+      </div>
+
+      <img class="arrow-circle-left arrow-hover-effect" src="../assets/img/arrow-circle-left.png" onclick="showPreviousRoutes()">
+      <img class="arrow-circle-right arrow-hover-effect" src="../assets/img/arrow-circle-right.png" onclick="showNextRoutes()" />
+      <div class="banner-container">
+        <div class="banner-slide-container">
+          <img class="banner-slide route-item" src="../assets/img/banner-pc_1170x155-2.jpg.jpg" />
+          <img class="banner-slide-2 route-item" src="../assets/img/banner-2.png" />
+        </div>
+        <img class="banner-left arrow-hover-effect" src="../assets/img/arrow-circle-left.png" onclick="showPreviousBanner()">
+        <img class="banner-right arrow-hover-effect" src="../assets/img/arrow-circle-right.png" onclick="showNextBanner()">
+      </div>      
+      <div class="nhaxe-container">
+        <!-- Render bằng JavaScript -->
+      </div>
+      <img class="arrow-circle-left-nhaxe arrow-hover-effect" src="../assets/img/arrow-circle-left.png" onclick="showPreviousNhaxes()">      
+      <img class="arrow-circle-right-nhaxe arrow-hover-effect" src="../assets/img/arrow-circle-right.png" onclick="showNextNhaxes()">
+      <div class="station-container">
+        <!-- Render bằng JavaScript -->
+      </div>
+
+      <div class="container-5">
+        <div class="container30">
+          <img class="background30" src="../assets/img/saigon.jpg" />
+          <div class="background30-text">Sài Gòn</div>
+          <div class="background301-text">287 bài viết</div>
+          <img class="link-wrapper30" src="../assets/img/vungtau.jpg">
+          <div class="link-wrapper30-text">Đà Nẵng</div>
+          <div class="link-wrapper301-text">570 bài viết</div>
+          </img>
+          <img class="div-wrapper30" src="../assets/img/dalat.jpg">
+          <div class="div-wrapper30-text">Hà Nội</div>
+          <div class="div-wrapper301-text">612 bài viết</div>
+          </img>
+          <img class="background31" src="../assets/img/quynhon.jpg">
+          <div class="background31-text">Quy Nhơn</div>
+          <div class="background311-text">81 bài viết</div>
+          </img>
+          <img class="background32" src="../assets/img/hanoi.jpg">
+          <div class="background32-text">Nha Trang</div>
+          <div class="background321-text">557 bài viết</div>
+          </img>
+          <img class="background33" src="../assets/img/nhatrang.jpg">
+          <div class="background33-text">Đà Lạt</div>
+          <div class="background331-text">87 bài viết</div>
+          </img>
+          <img class="background34" src="../assets/img/danang.jpg">
+          <div class="background34-text">Vũng Tàu</div>
+          <div class="background341-text">98 bài viết</div>
+          </img>
+          <img class="background35" src="../assets/img/phanthiet.jpg">
+          <div class="background35-text">Phan Thiết</div>
+          <div class="background351-text">276 bài viết</div>
+          </img>
+        </div>
+      </div>
+      <div class="frame-9">
+        <div class="frame-10">
+          <p class="text-wrapper-7">Nền Tảng Kết Nối Người Dùng Và Nhà xe</p>
+        </div>
+        <div class="frame-11">
+          <img class="satisfaction-png" src="../assets/img/satisfaction.png.svg" />
+          <div class="frame-12">
+            <p class="text-wrapper-11">ĐÁP ỨNG MỌI NHU CẦU TÌM KIẾM</p>
+            <p class="div-2">Với hơn 5000+ tuyến đường và 1500+ nhà xe trên khắp cả nước</p>
+          </div>
+        </div>
+        <div class="frame-13">
+          <div class="ribbon-png"></div>
+          <div class="frame-14">
+            <div class="text-wrapper-11">ĐẢM BẢO CÓ VÉ</div>
+            <p class="div-2">
+              <span class="span">Hoàn ngay </span>
+              <span class="text-wrapper-12">150%</span>
+              <span class="span"> nếu không có vé, mang đến hành trình trọn vẹn</span>
+            </p>
+          </div>
+        </div>
+        <div class="frame-15">
+          <div class="cooperate-png"></div>
+          <div class="frame-16">
+            <div class="text-wrapper-11">CAM KẾT GIỮ VÉ</div>
+            <p class="div-2">
+              <span class="span">Vivutoday cam kết hoàn </span>
+              <span class="text-wrapper-12">150%</span>
+              <span class="span"> nếu nhà xe không giữ vé</span>
+            </p>
+          </div>
+        </div>
+        <div class="frame-17">
+          <div class="telephone-png"></div>
+          <div class="frame-18">
+            <p class="text-wrapper-11">TỔNG ĐÀI HỖ TRỢ KHÁCH HÀNG 24/7</p>
+            <p class="div-2">Giải quyết kịp thời vấn đề của khách hàng một cách nhanh chóng</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-6">
+        <div class="link-wrapper">
+          <div class="link-13">
+            <a
+              href="https://www.24h.com.vn/tin-tuc-du-lich/dat-ve-xe-truc-tuyen-gia-re-chat-luong-cao-cung-vivutoday-c682a1370634.html">
+              <img class="element-logo-png" src="../assets/img/Container (2).png" />
+            </a>
+          </div>
+        </div>
+        <div class="link-wrapper">
+          <div class="link-14">
+            <a href="https://vtc.vn/co-ngay-ve-xe-sau-30-giay-tai-he-thong-tong-dai-dat-ve-xe-toan-quoc-ar703370.html">
+              <div class="container-7"><img class="vtc-news-png" src="../assets/img/Container (3).png" /></div>
+            </a>
+          </div>
+        </div>
+        <div class="link-wrapper">
+          <div class="link-13">
+            <a
+              href="https://eva.vn/tin-tuc-thoi-trang/he-lo-dan-model-va-ca-si-xuat-hien-trong-show-thoi-trang-kwang-under-the-sea-tai-ninh-thuan-c290a535907.html">
+              <div class="eva-logo-png-wrapper"><img class="eva-logo-png" src="../assets/img/Container (4).png" /></div>
+            </a>
+          </div>
+        </div>
+        <div class="link-wrapper">
+          <div class="link-15">
+            <a
+              href="https://afamily.vn/su-kien-thoi-trang-kwang-under-the-sea-fashion-show-duoc-dien-ra-tai-hoan-my-resort-ninh-chu-vao-ngay-31-10-20221028164813132.chn">
+              <div class="container-7"><img class="afamily-png" src="../assets/img/Container (5).png" /></div>
+            </a>
+          </div>
+        </div>
+        <div class="link-wrapper">
+          <div class="link-16">
+            <div class="container-7">
+              <a
+                href="https://baobariavungtau.com.vn/quang-cao/202308/tong-dai-ho-tro-dat-ve-xe-toan-quoc-vivutoday-su-lua-chon-so-1-cho-chuyen-di-tu-sai-gon-den-vung-tau-987134/">
+                <img class="logo-bao-ba-ria-vung" src="../assets/img/Container (6).png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="link-wrapper">
+          <div class="link-17">
+            <div class="container-7">
+              <a
+                href="https://baodanang.vn/can-biet/202308/vivutoday-nguoi-ban-tin-cay-giup-ban-dat-ve-xe-de-dang-3954801/">
+                <img class="logo-bao-da-nang" src="../assets/img/Container (7).png" />
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="footer1">
+            <div class="branch1">
+              <h5>Tin tức</h5>
+              <ul>
+                <li>
+                  <a href="">Xe Limousine - Đẳng cấp hạng thương gia thời đại mới</a>
+                </li>
+                <li>
+                  <a href="">Tổng quan các bến xe Vũng Tàu - Giới thiệu thông tin lịch trình nhà xe</a>
+                </li>
+                <li>
+                  <a href="">Top 31 nhà xe limousine, xe giường nằm đi Đà Lạt</a>
+                </li>
+              </ul>
+            </div>
+            <div class="branch2">
+              <h5>Tuyến đường</h5>
+              <ul>
+                <li><a href="">Xe đi Buôn Mê Thuột từ Sài Gòn</a></li>
+                <li><a href="">Xe đi Vũng Tàu từ Sài Gòn</a></li>
+                <li><a href="">Xe đi Nha Trang từ Sài Gòn</a></li>
+                <li><a href="">Xe đi Đà Lạt từ Sài Gòn</a></li>
+                <li><a href="">Xe đi Sapa từ Hà Nội</a></li>
+                <li><a href="">Xe đi Hải Phòng từ Hà Nội</a></li>
+                <li><a href="">Xe đi Vinh từ Hà Nội</a></li>
+              </ul>
+            </div>
+            <div class="branch3">
+              <h5>Xe Limousine</h5>
+              <ul>
+                <li><a href="">Xe Limousine đi Đà Lạt từ Sài Gòn</a></li>
+                <li><a href="">Xe Limousine đi Vũng Tàu từ Sài Gòn</a></li>
+                <li><a href="">Xe Limousine đi Nha Trang từ Sài Gòn</a></li>
+                <li><a href="">Xe Limousine đi Hải Phòng từ Hà Nội</a></li>
+                <li><a href="">Xe Limousine đi Hạ Long từ Hà Nội</a></li>
+                <li><a href="">Xe Limousine đi Sapa Từ Hà Nội</a></li>
+                <li><a href="">Xe Limousine đi Quảng Ninh từ Hà Nội</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer2">
+            <div class="branch01">
+              <h5>Bến xe</h5>
+              <ul>
+                <li><a href="">Bến xe Miền Đông</a></li>
+                <li><a href="">Bến xe Trung tâm Đà Nẵng</a></li>
+                <li><a href="">Bến xe Gia Lâm</a></li>
+                <li><a href="">Bến xe Mỹ Đình</a></li>
+                <li><a href="">Bến xe An Sương</a></li>
+                <li><a href="">Bến xe Nước Ngầm</a></li>
+                <li><a href="">Bến xe Miền Tây</a></li>
+              </ul>
+            </div>
+            <div class="branch02">
+              <h5>Nhà xe</h5>
+              <ul>
+                <li><a href="">Xe Sao Việt</a></li>
+                <li><a href="">Xe Hoa Mai</a></li>
+                <li><a href="">Xe Hạ Long Travel</a></li>
+                <li><a href="">Xe Quốc Đạt</a></li>
+                <li><a href="">Xe Thanh Bình Xanh</a></li>
+                <li><a href="">Xe Thiện Thành limousine</a></li>
+                <li><a href="">Xe Hồng Sơn Phú Yên</a></li>
+                <li><a href="">Xe Tiến Oanh</a></li>
+              </ul>
+            </div>
+            <div class="branch03">
+              <ul>
+                <li><a href="">Xe Hải Âu</a></li>
+                <li><a href="">Xe Chín Nghĩa</a></li>
+                <li><a href="">Xe Hưng Long</a></li>
+                <li><a href="">Xe Kim Mạnh Hùng</a></li>
+                <li><a href="">Xe Tuấn Hưng</a></li>
+                <li><a href="">Xe Khanh Phong</a></li>
+                <li><a href="">Xe An Anh (Quê Hương)</a></li>
+                <li><a href="">Xe Minh Quốc</a></li>
+              </ul>
+            </div>
+            <div class="branch04">
+              <ul>
+                <li><a href="">Xe Văn Minh</a></li>
+                <li><a href="">Xe Anh Tuyên</a></li>
+                <li><a href="">Xe Điền Linh</a></li>
+                <li><a href="">Xe Hạnh Cafe</a></li>
+                <li><a href="">Xe Tuấn Nga</a></li>
+                <li><a href="">Xe Ngọc Ánh Sài Gòn</a></li>
+                <li><a href="">Xe Hùng Cường</a></li>
+                <li><a href="">Xe Thuận Tiến</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer3">
+            <div class="branch001">
+              <h5>Về Chúng Tôi</h5>
+              <ul>
+                <li><a href="">Giới Thiệu Vivutoday</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Giá trị cốt lõi</a></li>
+              </ul>
+            </div>
+            <div class="branch002">
+              <h5>Hỗ Trợ</h5>
+              <ul>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li>
+                  <a href="">Chính sách điều khoản và giao dịch <br />chung</a>
+                </li>
+                <li><a href="">Chính sách đổi trả và hoàn tiền</a></li>
+                <li><a href="">Chính sách thanh toán</a></li>
+                <li><a href="">Quy chế hoạt động</a></li>
+              </ul>
+            </div>
+            <div class="branch003">
+              <h5>Liên hệ</h5>
+              <ul>
+                <li>
+                  <span>Hotline: <b>1900 0152</b> </span>
+                  <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">(Cước phí: 3.000 đồng/phút)</p>
+                </li>
+                <li>
+                  <span>Hotline: <b>1900.996.678</b> </span>
+                  <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">(Cước phí: 1.000 đồng/phút)</p>
+                </li>
+                <li>
+                  <span>Hotline: <b>1900.0179</b> </span>
+                  <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">
+                    Cước phí: 8000đ/phút (dịch Vụ đặt vé nhanh 24/7)
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="branch004">
+              <h5>Chứng nhận</h5>
+              <ul>
+                <li>
+                  <a  
+                    href="https://www.dmca.com/Protection/Status.aspx?ID=e19c9dc9-5e9b-4388-888a-94aed04f910a&refurl=http://vivutoday.com/"
+                    ><img src="../assets/img/dmca_protected_15_120.png.png" alt="" style="width: 98px; height: 55px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/vivutodaycom-1658125073"
+                    ><img src="../assets/img/handle_cert.png" alt="" style="width: 98px; height: 45.5px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="http://online.gov.vn/Home/WebDetails/112606?AspxAutoDetectCookieSupport=1"
+                    ><img src="../assets/img/BCT-LOGO.webp.png" alt="" style="width: 98px; height: 37px"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Tìm kiếm...">
+        </div>
+      </div>
+</body>
+</html>

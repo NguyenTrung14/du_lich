@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route</title>
+    <link rel="icon" href="../assets/img/logo.png">
+    <link rel="stylesheet" href="../css/route.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="head_introduce">
+          <div class="head1">
+            <span> <i class="fa-solid fa-bus-simple"></i> Hệ Thống Đặt Vé Xe Toàn Quốc</span>
+          </div>
+          <div class="head2">
+            <span><i class="fa-regular fa-envelope"></i> <a href="#"> info.vivutoday@gmail.com</a></span>
+            &nbsp;|&nbsp;
+            <span><i class="fas fa-phone"></i> <a href="#"> 1900-0152</a></span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- phan link -->
+        <div class="headMain">
+          <div class="listLink1">
+            <a href="/pages/home.html"><img src="../assets/img/logo.png" alt="vivutoday" /></a>
+          </div>
+          <div class="listLink2">
+            <a href="../pages/home.html">TRANG CHỦ</a>
+            <a href="../pages/introduce.html">GIỚI THIỆU</a>
+            <div class="dropdown-hover">
+              <a href="/pages/garage.html">THÔNG TIN NHÀ XE ▾</a>
+              <div class="dropdown-menu-hover">
+                <a href="#">Thông Tin Taxi</a>
+                <a href="#">Xe Limousine</a>
+                <a href="#">Xe Phương Trang</a>
+              </div>
+            </div>
+            <a href="/pages/busStation.html">BẾN XE</a>
+            <div class="dropdown-hover">
+              <a href="../pages/route.html">TUYẾN XE ▾</a>
+              <div class="dropdown-menu-hover">
+                <a href="#">Tuyến Xe Limousine</a>
+              </div>
+            </div>
+            <a href="/pages/ticket_check.html">KIỂM TRA VÉ</a>
+            <a href="#">TRAVEL</a>
+            <div class="search-box">
+              <button data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+  
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="title">
+            <h1>&nbsp;TUYẾN ĐƯỜNG</h1>
+        </div>
+        <br><br>
+        <div class="route">
+            <div class="routebody">
+            </div>
+        </div>        
+        </div>
+        <br>
+        <div class="pagination-container">
+            <div class="pagination">
+                <button onclick="changePage('prev')" id="prevBtn">&lt;</button>
+                <div id="pageNumbers"></div>
+                <button onclick="changePage('next')" id="nextBtn">&gt;</button>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <footer>
+            <div class="footer">
+              <div class="footer1">
+                <div class="branch1">
+                  <h5>Tin tức</h5>
+                  <ul>
+                    <li><a href="">Xe Limousine - Đẳng cấp hạng thương gia thời đại mới</a></li>
+                    <li><a href="">Tổng quan các bến xe Vũng Tàu - Giới thiệu thông tin lịch trình nhà xe</a></li>
+                    <li><a href="">Top 31 nhà xe limousine, xe giường nằm đi Đà Lạt</a></li>
+                  </ul>
+                </div>
+                <div class="branch2">
+                  <h5>Tuyến đường</h5>
+                  <ul>
+                    <li><a href="">Xe đi Buôn Mê Thuột từ Sài Gòn</a></li>
+                    <li><a href="">Xe đi Vũng Tàu từ Sài Gòn</a></li>
+                    <li><a href="">Xe đi Nha Trang từ Sài Gòn</a></li>
+                    <li><a href="">Xe đi Đà Lạt từ Sài Gòn</a></li>
+                    <li><a href="">Xe đi Sapa từ Hà Nội</a></li>
+                    <li><a href="">Xe đi Hải Phòng từ Hà Nội</a></li>
+                    <li><a href="">Xe đi Vinh từ Hà Nội</a></li>
+                  </ul>
+                </div>
+                <div class="branch3">
+                  <h5>Xe Limousine</h5>
+                  <ul>
+                    <li><a href="">Xe Limousine đi Đà Lạt từ Sài Gòn</a></li>
+                    <li><a href="">Xe Limousine đi Vũng Tàu từ Sài Gòn</a></li>
+                    <li><a href="">Xe Limousine đi Nha Trang từ Sài Gòn</a></li>
+                    <li><a href="">Xe Limousine đi Hải Phòng từ Hà Nội</a></li>
+                    <li><a href="">Xe Limousine đi Hạ Long từ Hà Nội</a></li>
+                    <li><a href="">Xe Limousine đi Sapa Từ Hà Nội</a></li>
+                    <li><a href="">Xe Limousine đi Quảng Ninh từ Hà Nội</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer2">
+                <div class="branch01">
+                  <h5>Bến xe</h5>
+                  <ul>
+                    <li><a href="">Bến xe Miền Đông</a></li>
+                    <li><a href="">Bến xe Trung tâm Đà Nẵng</a></li>
+                    <li><a href="">Bến xe Gia Lâm</a></li>
+                    <li><a href="">Bến xe Mỹ Đình</a></li>
+                    <li><a href="">Bến xe An Sương</a></li>
+                    <li><a href="">Bến xe Nước Ngầm</a></li>
+                    <li><a href="">Bến xe Miền Tây</a></li>
+                  </ul>
+                </div>
+                <div class="branch02">
+                  <h5>Nhà xe</h5>
+                  <ul>
+                    <li><a href="">Xe Sao Việt</a></li>
+                    <li><a href="">Xe Hoa Mai</a></li>
+                    <li><a href="">Xe Hạ Long Travel</a></li>
+                    <li><a href="">Xe Quốc Đạt</a></li>
+                    <li><a href="">Xe Thanh Bình Xanh</a></li>
+                    <li><a href="">Xe Thiện Thành limousine</a></li>
+                    <li><a href="">Xe Hồng Sơn Phú Yên</a></li>
+                    <li><a href="">Xe Tiến Oanh</a></li>
+                  </ul>
+                </div>
+                <div class="branch03">
+                  <ul>
+                    <li><a href="">Xe Hải Âu</a></li>
+                    <li><a href="">Xe Chín Nghĩa</a></li>
+                    <li><a href="">Xe Hưng Long</a></li>
+                    <li><a href="">Xe Kim Mạnh Hùng</a></li>
+                    <li><a href="">Xe Tuấn Hưng</a></li>
+                    <li><a href="">Xe Khanh Phong</a></li>
+                    <li><a href="">Xe An Anh (Quê Hương)</a></li>
+                    <li><a href="">Xe Minh Quốc</a></li>
+                  </ul>
+                </div>
+                <div class="branch04">
+                  <ul>
+                    <li><a href="">Xe Văn Minh</a></li>
+                    <li><a href="">Xe Anh Tuyên</a></li>
+                    <li><a href="">Xe Điền Linh</a></li>
+                    <li><a href="">Xe Hạnh Cafe</a></li>
+                    <li><a href="">Xe Tuấn Nga</a></li>
+                    <li><a href="">Xe Ngọc Ánh Sài Gòn</a></li>
+                    <li><a href="">Xe Hùng Cường</a></li>
+                    <li><a href="">Xe Thuận Tiến</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer3">
+                <div class="branch001">
+                  <h5>Về Chúng Tôi</h5>
+                  <ul>
+                    <li><a href="">Giới Thiệu Vivutoday</a></li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="">Giá trị cốt lõi</a></li>
+                  </ul>
+                </div>
+                <div class="branch002">
+                  <h5>Hỗ Trợ</h5>
+                  <ul>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li>
+                      <a href="">Chính sách điều khoản và giao dịch <br />chung</a>
+                    </li>
+                    <li><a href="">Chính sách đổi trả và hoàn tiền</a></li>
+                    <li><a href="">Chính sách thanh toán</a></li>
+                    <li><a href="">Quy chế hoạt động</a></li>
+                  </ul>
+                </div>
+                <div class="branch003">
+                  <h5>Liên hệ</h5>
+                  <ul>
+                    <li>
+                      <span>Hotline: <b>1900 0152</b> </span>
+                      <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">(Cước phí: 3.000 đồng/phút)</p>
+                    </li>
+                    <li>
+                      <span>Hotline: <b>1900.996.678</b> </span>
+                      <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">(Cước phí: 1.000 đồng/phút)</p>
+                    </li>
+                    <li>
+                      <span>Hotline: <b>1900.0179</b> </span>
+                      <p style="font-size: 11.3px; font-weight: 400; color: #0000008a">
+                        Cước phí: 8000đ/phút (dịch Vụ đặt vé nhanh 24/7)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="branch004">
+                  <h5>Chứng nhận</h5>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.dmca.com/Protection/Status.aspx?ID=e19c9dc9-5e9b-4388-888a-94aed04f910a&refurl=http://vivutoday.com/"
+                        ><img src="../assets/img/dmca_protected_15_120.png.png" alt="" style="width: 98px; height: 55px"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://tinnhiemmang.vn/danh-ba-tin-nhiem/vivutodaycom-1658125073"
+                        ><img src="../assets/img/handle_cert.png" alt="" style="width: 98px; height: 45.5px"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="http://online.gov.vn/Home/WebDetails/112606?AspxAutoDetectCookieSupport=1"
+                        ><img src="../assets/img/BCT-LOGO.webp.png" alt="" style="width: 98px; height: 37px"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </main>
+
+
+<script src="/js/data_route.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/route.js"></script>
+</body>
+</html>
